@@ -8,16 +8,13 @@ namespace App\Constants;
 
 /**
  * Class RedisKey
- * @package Constants
+ * @package App\Constants
  * @author fyj
  */
 class RedisKey
 {
-    public const HSET_ONLINE_USERS = 'hset_online_users';
-    public const LIST_QUEUE_TASK_KEY = 'list_queue_task_key';
-    public const HSET_RECORD_VIDEO_USERS = 'hset_record_video_users';
-    public const NOTICE_PIC_CACHE_KEY    = 'notice_pic_cache_key|type:%d';
-    public const SETBIT_CM_GOODS_TYPE_MAP   = 'setbit_cm_goods_type_map|t:%d';
+    public const EXAMPLE_TEST_KEY = 'example_test_key';
+
 
     /**
      * 缓存设置
