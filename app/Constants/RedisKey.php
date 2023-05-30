@@ -13,7 +13,7 @@ namespace App\Constants;
  */
 class RedisKey
 {
-    public const EXAMPLE_TEST_KEY = 'example_test_key';
+    const EXAMPLE_TEST_KEY = 'example_test_key';
 
 
     /**

@@ -10,7 +10,7 @@ use Phalcon\CLI\Console as ConsoleApp;
 
 define('ROOT_PATH', dirname(__DIR__));
 
-require ROOT_PATH . '/system/autoload.php';
+require ROOT_PATH . '/vendor/autoload.php';
 
 
 $bootstrap = new Bootstrap(new CliDI());
