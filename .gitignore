@@ -1,0 +1,11 @@
+.idea
+.DS_Store
+.project
+*.patch
+.git/
+.phpintel/
+runtime/*
+.env
+.phpunit*
+*.cache
+vendor

@@ -1,0 +1,36 @@
+<?php
+declare(strict_types=1);
+$namespaceDefinition
+use $useClassName;
+
+final class $className extends $baseClassName
+{
+
+    public function up()
+    {
+        $sql_file = str_replace(['migrations/', '.php'], ['migrations/sql/', '.up.sql'], __FILE__);
+        if(file_exists($sql_file)){
+            //$options = $this->adapter->getOptions();
+            //exec("mysql -h {$options['host']} -P {$options['port']} -u {$options['user']} -p{$options['pass']} {$options['name']} < ".$sql_file);
+
+            if($sql = trim(file_get_contents($sql_file))){
+                $this->execute($sql);
+            }
+        }
+    }
+
+
+    public function down()
+    {
+        $sql_file = str_replace(['migrations/', '.php'], ['migrations/sql/', '.down.sql'], __FILE__);
+        if(file_exists($sql_file)){
+            //$options = $this->adapter->getOptions();
+            //exec("mysql -h {$options['host']} -P {$options['port']} -u {$options['user']} -p{$options['pass']} {$options['name']} < ".$sql_file);
+
+            if($sql = trim(file_get_contents($sql_file))){
+                $this->execute($sql);
+            }
+        }
+    }
+
+}

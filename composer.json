@@ -1,0 +1,26 @@
+{
+    "name": "fyj/pf-app",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fyj",
+            "email": "314146276@qq.com"
+        }
+    ],
+    "require": {
+        "fyj/pf": "^1.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\" : "app/"
+        }
+    },
+    "scripts-descriptions": {
+        "phinx": "PHP database migrations."
+    },
+    "scripts": {
+        "phinx-create": "./vendor/robmorgan/phinx/bin/phinx create --configuration ./phinx/config.php --template ./phinx/Migration.template.php.dist ",
+        "phinx-migrate": "./vendor/robmorgan/phinx/bin/phinx migrate --configuration ./phinx/config.php "
+    }
+}
