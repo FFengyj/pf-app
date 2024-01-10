@@ -9,3 +9,4 @@ runtime/*
 .phpunit*
 *.cache
 vendor
+start.sh

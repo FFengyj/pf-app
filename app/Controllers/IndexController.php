@@ -18,8 +18,6 @@ class IndexController extends ControllerBase
     public function indexAction(): void
     {
         try {
-            var_dump(CommonHelper::getMillisecond());
-
             $this->flash->successJson();
         } catch (CustomErrException $e) {
             throw new JsonFmtException($e->getMessage(), $e->getCode(), $e->getData(), $e);
